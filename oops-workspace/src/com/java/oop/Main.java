@@ -1,7 +1,8 @@
 package com.java.oop;
 
 public class Main {
-    static void main() {
+    static  void main() {
+        Customer customer = new Customer();
         Product product;
         product = new Product();
         product. id = 100;
@@ -41,7 +42,20 @@ public class Main {
         System.out.println("ISAVAILABLE :" + product1.isAvailable);
         System.out.println("COMPANY : "+ product1.company);
         System.out.println("Category :" + product1.category);
-        
+
+        customer.id = 1234;
+        customer.name= "PRAVEEN";
+        customer.mobile= 8309957523L;
+        customer.email = "praveenpanditi467@gmail.com";
+        customer.gender= "Male";
+        customer.age = 21;
+        System.out.println("Id :" + customer.id);
+        System.out.println("NAME :" + customer.name);
+        System.out.println("MOBILE :" + customer.mobile);
+        System.out.println("EMAIL : " + customer.email);
+        System.out.println("GENDER : " + customer.gender);
+        System.out.println("AGE : " + customer.age);
+
 
 
 
