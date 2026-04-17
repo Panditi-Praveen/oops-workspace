@@ -2,8 +2,7 @@ package com.java.oop;
 
 public class Main {
     static  void main() {
-        Customer customer = new Customer();
-        Product product;
+        Product product; // reference to variable
         product = new Product();
         product. id = 100;
         product.name = "Asus vivobook";
@@ -43,12 +42,8 @@ public class Main {
         System.out.println("COMPANY : "+ product1.company);
         System.out.println("Category :" + product1.category);
 
-        customer.id = 1234;
-        customer.name= "PRAVEEN";
-        customer.mobile= 8309957523L;
-        customer.email = "praveenpanditi467@gmail.com";
-        customer.gender= "Male";
-        customer.age = 21;
+
+        Customer customer = new Customer();
         System.out.println("Id :" + customer.id);
         System.out.println("NAME :" + customer.name);
         System.out.println("MOBILE :" + customer.mobile);
@@ -56,6 +51,24 @@ public class Main {
         System.out.println("GENDER : " + customer.gender);
         System.out.println("AGE : " + customer.age);
 
+        Customer customer1 = new Customer(1,"praveen",8309957523L,"panditipraveen467@gmail.com","male",(byte)21);
+        System.out.println("Id :" + customer1.id);
+        System.out.println("NAME :" + customer1.name);
+        System.out.println("MOBILE :" + customer1.mobile);
+        System.out.println("EMAIL : " + customer1.email);
+        System.out.println("GENDER : " + customer1.gender);
+        System.out.println("AGE : " + customer1.age);
+
+        Product product2 =new Product();
+        System.out.println("Id :" + product2.id);
+        System.out.println("NAME :" + product2.name);
+        System.out.println("MaxRetailPrice :" + product2.maxRetailPrice);
+        System.out.println("Rating : " + product2.rating);
+        System.out.println("Reviewscount :" + product2.reviewsCount);
+        System.out.println("DiscountPercentage: " + product2.discountPercentage);
+        System.out.println("ISAVAILABLE :" + product2.isAvailable);
+        System.out.println("COMPANY : "+ product2.company);
+        System.out.println("Category :" + product2.category);
 
 
 
