@@ -2,6 +2,9 @@ package com.java.inheritance;
 
 
 public class Customer {
+    public void displayDetails(){
+        System.out.println("Customer Details");
+    }
     int id;
     String name;
     String email;
