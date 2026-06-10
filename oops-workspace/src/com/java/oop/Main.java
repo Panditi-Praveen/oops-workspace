@@ -5,23 +5,16 @@ public class Main {
         Product product; // reference to variable
         product = new Product();
         product. id = 100;
-        product.name = "Asus vivobook";
-        product.maxRetailPrice = 52990;
-        product.rating = 4.5f;
-        product.reviewsCount=42;
-        product.discountPercentage =34;
+        product.name = "SAMSUNG";
+        product.maxRetailPrice = 69000;
+        product.rating = 4.0F;
+        product.reviewsCount=100;
+        product.discountPercentage =70;
         product.isAvailable = true;
-        product.company ="Asus";
-        product.category ="Laptop";
-        System.out.println("Id :" + product.id);
-        System.out.println("NAME :" + product.name);
-        System.out.println("MaxRetailPrice :" + product.maxRetailPrice);
-        System.out.println("Rating : " + product.rating);
-        System.out.println("Reviewscount :" + product.reviewsCount);
-        System.out.println("DiscountPercentage: " + product.discountPercentage);
-        System.out.println("ISAVAILABLE :" + product.isAvailable);
-        System.out.println("COMPANY : "+ product.company);
-        System.out.println("Category :" + product.category);
+        product.company ="SAMSUNG";
+        product.category ="PHONE";
+        product.displayproductDetails();
+
 
         Product product1 = new Product();
         product1.name = "Asus vivobook";
@@ -32,15 +25,19 @@ public class Main {
         product1.isAvailable = true;
         product1.company ="Asus";
         product1.category ="Laptop";
-        System.out.println("Id :" + product1.id);
-        System.out.println("NAME :" + product1.name);
-        System.out.println("MaxRetailPrice :" + product1.maxRetailPrice);
-        System.out.println("Rating : " + product1.rating);
-        System.out.println("Reviewscount :" + product1.reviewsCount);
-        System.out.println("DiscountPercentage: " + product1.discountPercentage);
-        System.out.println("ISAVAILABLE :" + product1.isAvailable);
-        System.out.println("COMPANY : "+ product1.company);
-        System.out.println("Category :" + product1.category);
+        product1.displayproductDetails();
+
+        Product product2 =new Product();
+        product2.name = "IPHONE6";
+        product2.maxRetailPrice = 23333;
+        product2.rating = 3.3F;
+        product2.reviewsCount=69;
+        product2.discountPercentage =98;
+        product2.isAvailable = true;
+        product2.company ="IPHONE";
+        product2.category ="PHONE";
+        product2.displayproductDetails();
+
 
 
         Customer customer = new Customer();
@@ -59,16 +56,11 @@ public class Main {
         System.out.println("GENDER : " + customer1.gender);
         System.out.println("AGE : " + customer1.age);
 
-        Product product2 =new Product();
-        System.out.println("Id :" + product2.id);
-        System.out.println("NAME :" + product2.name);
-        System.out.println("MaxRetailPrice :" + product2.maxRetailPrice);
-        System.out.println("Rating : " + product2.rating);
-        System.out.println("Reviewscount :" + product2.reviewsCount);
-        System.out.println("DiscountPercentage: " + product2.discountPercentage);
-        System.out.println("ISAVAILABLE :" + product2.isAvailable);
-        System.out.println("COMPANY : "+ product2.company);
-        System.out.println("Category :" + product2.category);
+        product2.displayproductDetails();
+
+
+        product.displayProductByCompany("Asus");
+
 
 
 
