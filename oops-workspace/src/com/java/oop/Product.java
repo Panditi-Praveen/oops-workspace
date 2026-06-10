@@ -1,7 +1,7 @@
 package com.java.oop;
 
 public class Product {
-
+    // instance variable
     int id;
     String name;
     int maxRetailPrice;
@@ -33,5 +33,28 @@ public class Product {
         this.isAvailable = isAvailable;
         this.company = company;
         this.category = category;
+
     }
+
+        //display product details
+        void displayproductDetails(){
+            System.out.println("Id: " + id);
+            System.out.println("Name : " + name);
+            System.out.println("Max Retail Price : " + maxRetailPrice);
+            System.out.println("Rating: " + rating);
+            System.out.println("Reviews Count : " +reviewsCount);
+            System.out.println("Discount Percentage: " +discountPercentage);
+            System.out.println("Is Available : " +isAvailable);
+            System.out.println("Company: " +company);
+        }
+        /*
+        no return type with arguments
+         */
+        void displayProductByCompany(String company){
+            System.out.println("Display products by company:" +company);
+        }
+
+        void displayProductByCategoryAndManufacturedYear(String category, int manufacturedYear){
+            System.out.println("Display products by category and manufactured year: " + category + " " + manufacturedYear);
+        }
 }
