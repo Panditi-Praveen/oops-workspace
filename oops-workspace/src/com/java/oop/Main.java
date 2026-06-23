@@ -15,17 +15,7 @@ public class Main {
         product.company = "realme ";
         product.category =  "Tv";
 
-        System.out.println("id :" +product.id);
-        System.out.println("name :" +product.name);
-        System.out.println("Max Retail Price :" +product.maxRetailPrice);
-        System.out.println("Rating :" +product.rating);
-        System.out.println("Discount Percentage :" +product.discountPercentage);
-        System.out.println("Is available :" +product.isAvailable);
-        System.out.println("Reviews count :" +product.reviewsCount);
-        System.out.println("company :" +product.company);
-        System.out.println("category :" +product.category);
-
-        System.out.println("--------------------------------------");
+       product.displayproductDetails();
 
         Product product1 = new Product();
         product1.id = 2;
@@ -37,16 +27,22 @@ public class Main {
         product1.reviewsCount = 462;
         product1.company = "samsung ";
         product1.category = "mobile";
-        System.out.println("id :" +product1.id);
-        System.out.println("name :" +product1.name);
-        System.out.println("rating :" +product1.rating);
-        System.out.println("Max Retail Price :" +product1.maxRetailPrice);
-        System.out.println("discount percentage :" +product1.discountPercentage);
-        System.out.println("is available :" +product1.isAvailable);
-        System.out.println("reviews count :" +product1.reviewsCount);
-        System.out.println("company :" +product1.company);
-        System.out.println("category :" +product1.category);
+        product1.displayproductDetails();
         System.out.println("-----------------------------------");
+
+        Product product3 = new Product();
+        product3.id = 3;
+        product3.name = " IQOO Neo 9 Pro";
+        product3.rating = 5.0F;
+        product3.maxRetailPrice = 12222;
+        product3.discountPercentage = 20;
+        product3.isAvailable = true;
+        product3.reviewsCount = 666;
+        product3.company = "VIVO ";
+        product3.category = "mobile";
+        product3.displayproductDetails();
+        System.out.println("-----------------------------------");
+
 
 
         customer.id = 3;
@@ -118,26 +114,12 @@ public class Main {
 
         //Order details
         Order order1 = new Order();
-        System.out.println("Order id :" +order1.orderId);
-        System.out.println("Order date :" +order1.orderDate);
-        System.out.println("Order Status  :" +order1.orderStatus);
-        System.out.println("Is cancellable :" +order1.isCancellable);
-        System.out.println("Is returnable :" +order1.isReturnable);
-        System.out.println("Tracking Id :" +order1.trackingId);
-        System.out.println("Delivery type :" +order1.deliveryType);
-        System.out.println("Estimated delivery date :" +order1.estimatedDeliveryDate);
+        order1.displayOrderDetails();
         System.out.println("----------------------------------------");
 
 
         Order order2 = new Order(1001029876L,"21-4-2026","pending",true,false,190267549L,"standard","27-4-2026");
-        System.out.println("Order id :" +order2.orderId);
-        System.out.println("Order date :" +order2.orderDate);
-        System.out.println("Order Status  :" +order2.orderStatus);
-        System.out.println("Is cancellable :" +order2.isCancellable);
-        System.out.println("Is returnable :" +order2.isReturnable);
-        System.out.println("Tracking Id :" +order2.trackingId);
-        System.out.println("Delivery type :" +order2.deliveryType);
-        System.out.println("Estimated delivery date :" +order2.estimatedDeliveryDate);
+        order2.displayOrderDetails();
         System.out.println("----------------------------------------");
 
 
