@@ -37,6 +37,7 @@ public class Product {
     }
 
         //display product details
+
         void displayproductDetails(){
             System.out.println("Id: " + id);
             System.out.println("Name : " + name);
