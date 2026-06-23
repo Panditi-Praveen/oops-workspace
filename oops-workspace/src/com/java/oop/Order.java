@@ -31,4 +31,16 @@ public class Order {
         this.deliveryType = deliveryType;
         this.estimatedDeliveryDate = estimatedDeliveryDate;
     }
+    //display order details
+    void displayOrderDetails(){
+        System.out.println("OrderId:"+orderId);
+        System.out.println("OrderDate:"+orderDate);
+        System.out.println("OrderStatus:"+orderStatus);
+        System.out.println("IsCancellable:"+isCancellable);
+        System.out.println("IsReturnable:"+isReturnable);
+        System.out.println("TrackingId:"+trackingId);
+        System.out.println("DeliveryType:"+deliveryType);
+        System.out.println("EstimatedDelivery:"+estimatedDeliveryDate);
+
+    }
 }
